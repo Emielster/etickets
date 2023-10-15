@@ -31,6 +31,7 @@ input {
   border-bottom: 2px solid #333; /* Add an underline effect */
   background: transparent; /* Make the input field transparent */
   outline: none;
+  color: #000;
 }
 
 button {
