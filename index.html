@@ -19,14 +19,15 @@
 
         const codeInput = document.getElementById("code_input").value;
         if (codes.includes(codeInput)) {
-          if(codeInput="1K2301LM1J391NMK")
-             alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is AA84.");
-          if(codeInput="JK9513K0MRO1NHJJ")
-             alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is AB12.");
-          if(codeInput="KOP51290AAAL1MOP")
-              alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is VAM2.");
-          if(codeInput="KOP51290AAAL1MMZ")
-              alert("U bent toegestaan. De test is gelukt");
+              if (codeInput === "1K2301LM1J391NMK") {
+                  alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is AA84.");
+              } else if (codeInput === "JK9513K0MRO1NHJJ") {
+                  alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is AB12.");
+               } else if (codeInput === "KOP51290AAAL1MOP") {
+                  alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is VAM2.");
+              } else if (codeInput === "KOP51290AAAL1MMZ") {
+                  alert("U bent toegestaan. De test is gelukt");
+                }
         } else {
           alert("Foute code. Als dit probleem blijft voorkomen, contacteer Emiel.");
         }
