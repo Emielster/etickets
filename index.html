@@ -1,22 +1,25 @@
+<!DOCTYPE html>
 <html>
+  <head>
     <script>
-    let codes = ["1K2301LM1J391NMK","JK9513K0MRO1NHJJ","KOP51290AAAL1MOP","KOP51290AAAL1MMZ"]
-    function submit()
-    {
-      if(codes.include(document.getElementById(code_input))
-      {
-        alert("U bent toegestaan.")
-      }
-      else
-      {
-        alert("Foute code.")
-      }
-    }
-  </script>
-  <h1>ETICKETS THE MOPL COLLECTION</h1>
-  <p>Welkom!</p>
-  <p>Valideer uw code. (geen streepen zetten!)</p>
-  <input id="code_input" placeholder="XXXX-XXXX-XXXX-XXXX"></input>
-  <button id="submit" onclick="submit()">Verzend</button>
+      let codes = ["1K2301LM1J391NMK", "JK9513K0MRO1NHJJ", "KOP51290AAAL1MOP", "KOP51290AAAL1MMZ"];
 
+      function submit() {
+        const codeInput = document.getElementById("code_input").value;
+        if (codes.includes(codeInput)) {
+          alert("U bent toegestaan.");
+        } else {
+          alert("Foute code.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>ETICKETS THE MOPL COLLECTION</h1>
+    <p>Welkom!</p>
+    <p>Valideer uw code. (geen streepen zetten!)</p>
+    <input id="code_input" placeholder="XXXX-XXXX-XXXX-XXXX" />
+    <button id="submit" onclick="submit()">Verzend</button>
+  </body>
 </html>
+
