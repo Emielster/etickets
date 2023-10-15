@@ -4,14 +4,16 @@
     <script>
       let codes = ["1K2301LM1J391NMK", "JK9513K0MRO1NHJJ", "KOP51290AAAL1MOP", "KOP51290AAAL1MMZ"];
 
-      function submit() {
+      document.getElementById("myForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission behavior
+
         const codeInput = document.getElementById("code_input").value;
         if (codes.includes(codeInput)) {
           alert("U bent toegestaan.");
         } else {
           alert("Foute code.");
         }
-      }
+      });
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -21,7 +23,7 @@
         <p>Welkom!</p>
         <p>Valideer uw code. (geen streepen zetten!)</p>
         <input id="code_input" placeholder="XXXX-XXXX-XXXX-XXXX" />
-        <button id="submit" onclick="submit()">Verzend</button>
+        <button id="submit">Verzend</button>
     </form>
   </body>
 </html>
