@@ -1,0 +1,48 @@
+/* Apply the glass-like style to the form */
+body {
+  background: url('your-background-image.jpg'); /* Set your background image here */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.3); /* Adjust the alpha (4th) value for transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the shadow for the glass effect */
+  margin: 20px auto;
+  width: 300px; /* Adjust the width as needed */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 2px solid #333; /* Add an underline effect */
+  background: transparent; /* Make the input field transparent */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
