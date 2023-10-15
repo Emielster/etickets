@@ -27,7 +27,8 @@
                   alert("U bent toegestaan. Als u Emiel tegenkomt, zeg uw code met uw 2FAC verificatie code, en dat is VAM2.");
               } else if (codeInput === "KOP51290AAAL1MMZ") {
                   alert("U bent toegestaan. De test is gelukt");
-                }
+              }
+              document.location = "succeeded.html"; // Redirecting to succeeded.html
         } else {
           alert("Foute code. Als dit probleem blijft voorkomen, contacteer Emiel.");
         }
