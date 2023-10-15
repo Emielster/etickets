@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form id="myForm">
+        <h1>ETICKETS THE MOPL COLLECTION</h1>
+        <p>Welkom!</p>
+        <p>Valideer uw code. (geen streepen zetten!)</p>
+        <input id="code_input" placeholder="XXXX-XXXX-XXXX-XXXX" />
+        <button id="submit">Verzend</button>
+    </form>
+        <script>
       let codes = ["1K2301LM1J391NMK", "JK9513K0MRO1NHJJ", "KOP51290AAAL1MOP", "KOP51290AAAL1MMZ"];
 
       document.getElementById("myForm").addEventListener("submit", function (e) {
@@ -15,16 +25,6 @@
         }
       });
     </script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <form id="myForm">
-        <h1>ETICKETS THE MOPL COLLECTION</h1>
-        <p>Welkom!</p>
-        <p>Valideer uw code. (geen streepen zetten!)</p>
-        <input id="code_input" placeholder="XXXX-XXXX-XXXX-XXXX" />
-        <button id="submit">Verzend</button>
-    </form>
   </body>
 </html>
 
